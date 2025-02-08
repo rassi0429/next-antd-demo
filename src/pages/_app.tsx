@@ -1,11 +1,10 @@
-'use client';
-
 import { FC, ReactNode } from 'react';
-import { ConfigProvider, App as AntdApp } from 'antd/es';
+import { ConfigProvider, App as AntdApp } from 'antd';
 import type { AppProps } from 'next/app';
 import { GLOBAL_TOKEN } from '@/theme/themeConfig';
 import { NextComponentType } from "next/dist/shared/lib/utils";
 import zhCN from 'antd/es/locale/zh_CN';
+import InitAppNotification from "@/components/notification";
 import "@/styles/globals.css";
 
 declare type ComponentType = NextComponentType & {
@@ -30,6 +29,7 @@ function App({ Component, pageProps }: Omit<AppProps, 'Component'> & { Component
       }}
     >
       <AntdApp>
+        <InitAppNotification />
         <Layout>
           <Component {...pageProps} />
         </Layout>
