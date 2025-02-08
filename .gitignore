@@ -40,3 +40,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 public/antd.min.css
+
+pnpm-lock.yaml
