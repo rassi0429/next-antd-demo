@@ -2,8 +2,8 @@ import { FC, ReactNode } from 'react';
 import { ConfigProvider, App as AntdApp } from 'antd';
 import type { AppProps } from 'next/app';
 import { GLOBAL_TOKEN } from '@/theme/themeConfig';
-import { NextComponentType } from "next/dist/shared/lib/utils";
-import zhCN from 'antd/es/locale/zh_CN';
+import type { NextComponentType } from "next/dist/shared/lib/utils";
+import zhCN from 'antd/locale/zh_CN';
 import InitAppNotification from "@/components/notification";
 import "@/styles/globals.css";
 

@@ -42,3 +42,5 @@ next-env.d.ts
 public/antd.min.css
 
 pnpm-lock.yaml
+package-lock.json
+yarn.lock

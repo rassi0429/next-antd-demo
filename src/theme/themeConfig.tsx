@@ -1,4 +1,4 @@
-import { ThemeConfig } from "antd/es/config-provider/context";
+import type { ThemeConfig } from "antd/es/config-provider/context";
 
 /**
  * 影响全局布局、视觉效果的主题设置
